@@ -17,7 +17,7 @@
       <h1>Full Screen Map</h1>
       <p>This map is a base for future/present projects
         <a href="/">X</a> with
-        <a href="https://developers.google.com/maps/">Maps API</a>.
+        <a href="https://developers.google.com/maps/">Maps API</a> and <a id="my-link" href="#my-panel">Panel Slider</a>.
       </p>
       <a href="/">
         <img src="https://raw.github.com/github/media/master/octocats/blacktocat-32.png">
@@ -27,10 +27,17 @@
 
   <div id="map-canvas"></div>
 
+  <div id="my-panel" class="panel">
+    <h1>Panel X</h1>
+  </div>
+
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/map.js"></script>
   <script src="js/jquery.panelslider.min.js"></script>
+  <script>
+    $('#my-link').panelslider({clickClose: false});
+  </script>
 </body>
 </html>
 
